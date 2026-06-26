@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rally — Privacy Policy</title>
+  <style>
+    :root { --bg: #f9fafb; --fg: #111827; --accent: #1565D8; --muted: #6b7280; --border: #e5e7eb; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.7; padding: 2rem 1rem; }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+    h2 { font-size: 1.25rem; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--accent); }
+    p, li { margin-bottom: 0.75rem; }
+    ul { padding-left: 1.25rem; }
+    .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
+    a { color: var(--accent); }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    th, td { text-align: left; padding: 0.5rem 0.75rem; border: 1px solid var(--border); font-size: 0.95rem; }
+    th { background: #f3f4f6; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+<h1>Privacy Policy</h1>
+<p class="meta">Effective date: June 26, 2026 &middot; Last updated: June 26, 2026</p>
+
+<p><strong>Rally</strong> ("we", "us", "our") is a tennis session tracking app developed by Miquel Tatjé. This policy explains what data we collect, why, and how we protect it.</p>
+
+<h2>1. Data We Collect</h2>
+
+<table>
+  <tr><th>Category</th><th>Data</th><th>Purpose</th></tr>
+  <tr><td>Account</td><td>Email address, first name, last name</td><td>Authentication &amp; profile</td></tr>
+  <tr><td>Profile photo</td><td>Image you upload</td><td>Display in your profile</td></tr>
+  <tr><td>Authentication tokens</td><td>Apple&nbsp;ID or Google&nbsp;ID (OAuth tokens)</td><td>Sign-in via third-party providers</td></tr>
+  <tr><td>Session data</td><td>Free-text descriptions of your tennis sessions, match scores, parsed stroke/physical/mental data</td><td>Core app functionality — tracking and analysing your sessions</td></tr>
+  <tr><td>Device token</td><td>Expo push notification token</td><td>Sending you optional notifications</td></tr>
+</table>
+
+<p>We do <strong>not</strong> collect location data, contacts, health data, browsing history, or device identifiers for advertising.</p>
+
+<h2>2. How We Use Your Data</h2>
+<ul>
+  <li><strong>Session analysis:</strong> Your free-text session descriptions are sent to OpenAI's API (GPT-4o-mini) through our secure server-side functions to extract structured data (strokes, scores, physical/mental state). The text is processed in real time and is not stored by OpenAI for training purposes under our API agreement.</li>
+  <li><strong>Player stats:</strong> Parsed session data is aggregated to compute your player card attributes (serve, forehand, backhand, net play, mental, movement).</li>
+  <li><strong>Notifications:</strong> If you opt in, we use your push token to send session reminders or inactivity alerts.</li>
+  <li><strong>Account management:</strong> Your email and name are used solely for authentication and displaying your profile within the app.</li>
+</ul>
+
+<h2>3. Third-Party Services</h2>
+<ul>
+  <li><strong>Supabase</strong> (database, authentication, file storage) — <a href="https://supabase.com/privacy">supabase.com/privacy</a></li>
+  <li><strong>OpenAI</strong> (natural language processing, server-side only) — <a href="https://openai.com/policies/api-data-usage-policy">openai.com/policies</a></li>
+  <li><strong>Apple Sign In</strong> — <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
+  <li><strong>Google Sign In</strong> — <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li><strong>Expo</strong> (push notifications) — <a href="https://expo.dev/privacy">expo.dev/privacy</a></li>
+</ul>
+<p>We do not sell, rent, or share your personal data with any third party for advertising or marketing purposes.</p>
+
+<h2>4. Data Storage &amp; Security</h2>
+<p>Your data is stored in Supabase's cloud infrastructure with row-level security (RLS) enabled — you can only access your own data. All communication between the app and our servers uses HTTPS/TLS encryption. API keys and secrets are stored exclusively in server-side environment variables and are never exposed to the client app.</p>
+
+<h2>5. Data Retention</h2>
+<p>We retain your data for as long as your account is active. You can delete individual sessions from within the app at any time. When you delete your account, all your data — including profile information, sessions, match results, parsed data, and AI-generated insights — is permanently and immediately deleted from our systems.</p>
+
+<h2>6. Your Rights</h2>
+<ul>
+  <li><strong>Access:</strong> All your data is visible within the app.</li>
+  <li><strong>Correction:</strong> You can edit your profile and session data at any time.</li>
+  <li><strong>Deletion:</strong> You can delete your account from the Profile screen. This permanently removes all your data.</li>
+  <li><strong>Data portability:</strong> Contact us to request an export of your data.</li>
+</ul>
+<p>If you are in the EU/EEA, you have additional rights under the GDPR, including the right to object to processing and to lodge a complaint with your local data protection authority.</p>
+
+<h2>7. Children's Privacy</h2>
+<p>Rally is not directed at children under 13. We do not knowingly collect data from children under 13. If you believe a child has provided us with personal data, please contact us and we will delete it.</p>
+
+<h2>8. Changes to This Policy</h2>
+<p>We may update this policy from time to time. We will notify you of material changes via the app or email. The "last updated" date at the top reflects the most recent revision.</p>
+
+<h2>9. Contact Us</h2>
+<p>If you have questions about this policy or your data, contact us at:<br>
+<a href="mailto:miquel.tatje.fernandez@gmail.com">miquel.tatje.fernandez@gmail.com</a></p>
+
+</div>
+</body>
+</html>
